@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- ชื่อเว็บ -->
+  <title>แนะนำเซิฟเวอร์</title>
+  
+  <!-- favicon / ไอคอนเว็บ -->
+  <link rel="icon" type="image/png" href="https://yt3.googleusercontent.com/-eAs-1do2V5rm1nNue0mr4xhGigxJQLAgMWMfy0KmDPTiXdPgBp9WSAsVlFKdF4wsv0rQsz4=s120-c-k-c0x00ffffff-no-rj">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes spin-slow {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    .animate-spin-slow { animation: spin-slow 20s linear infinite; }
+    
+    @keyframes glow-pulse {
+      0%, 100% { box-shadow: 0 0 10px #34d399, 0 0 20px #10b981; }
+      50% { box-shadow: 0 0 20px #34d399, 0 0 40px #10b981; }
+    }
+    .glow-pulse { animation: glow-pulse 2s infinite; }
+  </style>
+</head>
+<body class="min-h-screen bg-gradient-to-br from-blue-400 via-blue-500 to-purple-600 text-white p-6 font-sans flex flex-col items-center justify-center relative overflow-hidden">
+
+  <!-- เอฟเฟกต์ตกแต่งรอบเว็บ -->
+  <div class="absolute top-10 left-10 w-24 h-24 bg-white/20 rounded-full animate-ping"></div>
+  <div class="absolute bottom-20 right-20 w-32 h-32 bg-white/10 rounded-full animate-bounce"></div>
+  <div class="absolute top-1/2 left-1/3 w-20 h-20 bg-white/30 rounded-full animate-spin"></div>
+  <div class="absolute bottom-1/4 left-1/2 w-28 h-28 bg-white/20 rounded-full animate-pulse"></div>
+
+  <!-- กล่องแนะนำเซิฟ -->
+  <div class="bg-white/10 p-8 rounded-xl shadow-lg text-center w-full max-w-md flex flex-col items-center">
+    <!-- โลโก้หมุน+glow -->
+    <img src="https://yt3.googleusercontent.com/-eAs-1do2V5rm1nNue0mr4xhGigxJQLAgMWMfy0KmDPTiXdPgBp9WSAsVlFKdF4wsv0rQsz4=s120-c-k-c0x00ffffff-no-rj" alt="Logo" class="w-24 h-24 mb-4 rounded-full border-2 border-white animate-spin-slow glow-pulse">
+
+    <h1 class="text-3xl font-bold mb-4">แนะนำเซิฟเวอร์ SMP เอาชีวิตรอด</h1>
+    <p class="text-white/80 mb-6">เข้าร่วมชุมชนของเราเพื่อสนุกกับการเล่น Minecraft แบบเอาชีวิตรอดกับเพื่อน ๆ!</p>
+    
+    <!-- ปุ่ม Discord + ชื่อ Discord -->
+    <div class="flex items-center gap-4">
+      <a href="https://discord.gg/s7PKczRvUT" target="_blank" rel="noopener noreferrer" class="px-6 py-3 bg-green-500 text-white rounded-lg text-lg hover:bg-green-600 transition glow-pulse">
+        เข้าร่วม Discord
+      </a>
+      <span class="text-white/80 font-semibold">TalkZemCraft</span>
+    </div>
+    
+  </div>
+
+  <!-- Footer -->
+  <footer class="mt-12 text-sm text-white/70 text-center">เครดิต YT: XFRTVVIN | BY XFRTV</footer>
+
+</body>
+</html>
